@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Retis</title>
@@ -63,197 +64,196 @@
         <div class="text-center d-none d-md-inline">
           <button class="rounded-circle border-0" id="sidebarToggle"></button>
         </div>
-      </ul>
-      <!-- End of Sidebar -->
+      </ul> <!-- End of Sidebar -->
 
       <!-- Content Wrapper -->
       <div id="content-wrapper" class="d-flex flex-column">
         <!-- Main Content -->
         <div id="content">
-      </br>
-      <!-- Begin Page Content -->
-      <div class="container-fluid">
-
-        <!-- Page Heading -->
-        <div class="d-sm-flex align-items-center justify-content-between mb-4">
-          <h1 class="h3 mb-0 text-gray-800">Multi-Stage System</h1>
-        </div>
-
-        <!-- Content Row -->
-        <div class="row">
-          <div class="col-md-12 col-sm-12">
-            <select class="browser-default custom-select" id="patient">
-              <option selected>Please, choose a patient</option>
-              <option value="1">Patient 1</option>
-              <option value="2">Patient 2</option>
-              <option value="3">Patient 3</option>
-              <option value="4">Patient 4</option>
-              <option value="5">Patient 5</option>
-              <option value="6">Patient 6</option>
-              <option value="7">Patient 7</option>
-              <option value="8">Patient 8</option>
-              <option value="9">Patient 9</option>
-              <option value="10">Patient 10</option>
-              <option value="11">Patient 11</option>
-              <option value="12">Patient 12</option>
-              <option value="13">Patient 13</option>
-              <option value="14">Patient 14</option>
-              <option value="15">Patient 15</option>
-            </select>
-          </div>
-        </div>
-        </br>
-
-        <div class="row">
-          <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card border-left-primary shadow h-100 py-2">
-              <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                  <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                      First Stage Prediction
-                    </div>
-                    <div class="h5 mb-0 font-weight-bold text-gray-800" id="pred1">
-                      Non Healthy
-                    </div>
-                  </div>
-                  <div class="col-auto">
-                    <i class="fas fa-lightbulb fa-2x text-gray-300"></i>
-                  </div>
-                </div>
+          </br>
+          <!-- Begin Page Content -->
+          <div class="container-fluid">
+            <!-- Page Heading -->
+            <div class="d-sm-flex align-items-center justify-content-between mb-4">
+              <h1 class="h3 mb-0 text-gray-800">
+                Multi-Stage System
+              </h1>
+            </div>
+            <!-- Content Row -->
+            <div class="row">
+              <div class="col-md-12 col-sm-12">
+                <select class="browser-default custom-select" id="patient">
+                  <option selected>Please, choose a patient</option>
+                  <option value="1">Patient 1</option>
+                  <option value="2">Patient 2</option>
+                  <option value="3">Patient 3</option>
+                  <option value="4">Patient 4</option>
+                  <option value="5">Patient 5</option>
+                  <option value="6">Patient 6</option>
+                  <option value="7">Patient 7</option>
+                  <option value="8">Patient 8</option>
+                  <option value="9">Patient 9</option>
+                  <option value="10">Patient 10</option>
+                  <option value="11">Patient 11</option>
+                  <option value="12">Patient 12</option>
+                  <option value="13">Patient 13</option>
+                  <option value="14">Patient 14</option>
+                  <option value="15">Patient 15</option>
+                </select>
               </div>
             </div>
-          </div>
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-primary shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                        First Stage Confidence
+            </br>
+
+            <div class="row">
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                          First Stage Prediction
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800"
+                             id="pred1">
+                          Non Healthy
+                        </div>
                       </div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800"
-                           id="conf1">
-                       45%
+                      <div class="col-auto">
+                        <i class="fas fa-lightbulb fa-2x text-gray-300"></i>
                       </div>
                     </div>
-                    <div class="col-auto">
-                      <i class="fas fa-question-circle fa-2x text-gray-300"></i>
-                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-xl-3 col-md-6 mb-4">
-            <div class="card border-left-danger shadow h-100 py-2">
-              <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                  <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-                      Second Stage Prediction
-                    </div>
-                    <div class="h5 mb-0 font-weight-bold text-gray-800"
-                         id="pred2">
-                      DR
-                    </div>
-                  </div>
-                  <div class="col-auto">
-                    <i class="fas fa-lightbulb fa-2x text-gray-300"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-danger shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-                        Second Stage Confidence
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-primary shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                          First Stage Confidence
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800"
+                             id="conf1">
+                          45%
+                        </div>
                       </div>
-                      <div class="h5 mb-0 font-weight-bold text-gray-800"
-                           id="conf2">
-                       49%
+                      <div class="col-auto">
+                        <i class="fas fa-question-circle fa-2x text-gray-300"></i>
                       </div>
                     </div>
-                    <div class="col-auto">
-                      <i class="fas fa-question-circle fa-2x text-gray-300"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-danger shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
+                          Second Stage Prediction
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800"
+                             id="pred2">
+                          DR
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <i class="fas fa-lightbulb fa-2x text-gray-300"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card border-left-danger shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
+                          Second Stage Confidence
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800"
+                             id="conf2">
+                          49%
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <i class="fas fa-question-circle fa-2x text-gray-300"></i>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-        </div>
 
-        <div class="row">
-          <div class="col-lg-6 col-sm-12">
-            <div class="card shadow mb-4">
-              <div class="card-header py-3">
-                <h6 class="m-0 font-weight-bold text-primary">
-                  Multi-Stage System
-                </h6>
-              </div>
-              <div class="card-body">
-                <div class="text-center">
-                  <img class="img-fluid px-3 px-sm-4 mt-3 mb-4"
-                       style="width: 31rem;" src="img/design2.png" alt="">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6 col-sm-12">
-            <div class="card shadow mb-4">
-              <div class="card-header py-3">
-                <h6 class="m-0 font-weight-bold text-primary">
-                  Patient eye fundus image
-                </h6>
-              </div>
-              <div class="card-body" style="background-color:black">
-                <div class="text-center">
-                  <img class="img-fluid px-3 px-sm-4 mt-3 mb-4"
-                       style="width: 35rem;" src="" alt=""
-                       id="fundus">
-                </div>
-              </div>
-            </div>
-          </div>
-            <div class="col-lg-6 col-sm-12">
-            <div class="card shadow mb-4">
-              <div class="card-header py-3">
-                <h6 class="m-0 font-weight-bold text-primary">
-                  First stage attention map
-                </h6>
-              </div>
-              <div class="card-body">
-                <div class="text-center">
-                  <img class="img-fluid px-3 px-sm-4 mt-3 mb-4"
-                       style="width: 35rem;" src="img/test2.png" alt=""
-                       id="map1">
-                </div>
-              </div>
-            </div>
-            </div>
+            <div class="row">
               <div class="col-lg-6 col-sm-12">
-            <div class="card shadow mb-4">
-              <div class="card-header py-3">
-                <h6 class="m-0 font-weight-bold text-primary">
-                  Second stage attention map
-                </h6>
-              </div>
-              <div class="card-body">
-                <div class="text-center">
-                  <img class="img-fluid px-3 px-sm-4 mt-3 mb-4"
-                       style="width: 35rem;" src="" alt=""
-                       id="map2">
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      Multi-Stage System
+                    </h6>
+                  </div>
+                  <div class="card-body">
+                    <div class="text-center">
+                      <img class="img-fluid px-3 px-sm-4 mt-3 mb-4"
+                           style="width: 31rem;" src="img/design2.png" alt="">
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div> <!-- Row -->
-      </div>  <!-- /.container-fluid -->
+              <div class="col-lg-6 col-sm-12">
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      Patient eye fundus image
+                    </h6>
+                  </div>
+                  <div class="card-body" style="background-color:black">
+                    <div class="text-center">
+                      <img class="img-fluid px-3 px-sm-4 mt-3 mb-4"
+                           style="width: 35rem;" src="" alt=""
+                           id="fundus">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      First stage attention map
+                    </h6>
+                  </div>
+                  <div class="card-body">
+                    <div class="text-center">
+                      <img class="img-fluid px-3 px-sm-4 mt-3 mb-4"
+                           style="width: 35rem;" src="img/test2.png" alt=""
+                           id="map1">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      Second stage attention map
+                    </h6>
+                  </div>
+                  <div class="card-body">
+                    <div class="text-center">
+                      <img class="img-fluid px-3 px-sm-4 mt-3 mb-4"
+                           style="width: 35rem;" src="" alt=""
+                           id="map2">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- Row -->
+          </div>  <!-- /.container-fluid -->
         </div> <!-- End of Main Content -->
-
         <!-- Footer -->
         <footer class="sticky-footer bg-white">
           <div class="container my-auto">
@@ -261,15 +261,9 @@
               <span>Copyright &copy; Pablo González Carrizo 2019</span>
             </div>
           </div>
-        </footer>
-        <!-- End of Footer -->
-
-      </div>
-      <!-- End of Content Wrapper -->
-
-    </div>
-    <!-- End of Page Wrapper -->
-
+        </footer> <!-- End of Footer -->
+      </div> <!-- End of Content Wrapper -->
+    </div>  <!-- End of Page Wrapper -->
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
       <i class="fas fa-angle-up"></i>
@@ -282,8 +276,6 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-    <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
     <!-- Page level custom scripts -->
     <script src="js/multi.js"></script>
 

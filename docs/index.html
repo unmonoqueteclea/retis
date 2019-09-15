@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Retis</title>
@@ -63,68 +64,119 @@
         <div class="text-center d-none d-md-inline">
           <button class="rounded-circle border-0" id="sidebarToggle"></button>
         </div>
-      </ul>
-      <!-- End of Sidebar -->
-
+      </ul> <!-- End of Sidebar -->
       <!-- Content Wrapper -->
       <div id="content-wrapper" class="d-flex flex-column">
         <!-- Main Content -->
         <div id="content">
-      </br>
-      <!-- Begin Page Content -->
-      <div class="container-fluid">
-
-        <!-- Page Heading -->
-        <div class="d-sm-flex align-items-center justify-content-between mb-4">
-          <h1 class="h3 mb-0 text-gray-800">Retis Project: DR and DMAE detection</h1>
-        </div>
-
-        <!-- Content Row -->
-        <div class="row">
-          <div class="col-lg-6 col-sm-12">
-            <div class="card shadow mb-4">
-              <div class="card-header py-3">
-                <h6 class="m-0 font-weight-bold text-primary">
-                  Multi-Stage System
-                </h6>
-              </div>
-              <div class="card-body">
-                <div class="text-center">
-                  <img class="img-fluid px-3 px-sm-4 mt-3 mb-4"
-                       style="width: 50rem;" src="img/design2.png"
-                       alt="">
-                </div>
-                <p>This system is composed of two stages. The first
-                  one tries to differentiate between healthy and non
-                  healthy images (without any distintion between DR
-                  and AMD). The second stage is in charge of
-                  distinguishing between DR and DMAE</p>
-              </div>
+          </br>
+          <!-- Begin Page Content -->
+          <div class="container-fluid">
+            <!-- Page Heading -->
+            <div class="d-sm-flex align-items-center justify-content-between mb-4">
+              <h1 class="h3 mb-0 text-gray-800">
+                Retis Project: DR and DMAE detection
+              </h1>
             </div>
-          </div>
-          <div class="col-lg-6 col-sm-12">
-            <div class="card shadow mb-4">
-              <div class="card-header py-3">
-                <h6 class="m-0 font-weight-bold text-primary">
-                  One-Step System
-                </h6>
-              </div>
-              <div class="card-body">
-                <div class="text-center">
-                  <img class="img-fluid px-3 px-sm-4 mt-3 mb-4"
-                       style="width: 50rem;" src="img/design3.png"
-                       alt="">
+            <div class="row">
+              <div class="col-lg-12 col-sm-12">
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      What is project Retis?
+                    </h6>
+                  </div>
+                  <div class="card-body">
+                    <p>The word <strong>retis</strong> comes from latin and means
+                      <em>network</em>. This is because the retina is
+                      a big network of blood vessels. </p>
+                    <p> The Retis Project tries to detect <strong>Diabetic
+                        Retinopathy (DR) </strong> and
+                        <strong>Age-Related Macular Degeneration (DMAE) </strong>
+                        in eye fundus images using Deep Learning. This project is
+                        my <strong>final Master's Degree Thesis</strong>
+                        in Polytechnical University
+                        of Valencia. You can download the thesis (in Spanish)
+                        <a href="https://github.com/unmonoqueteclea/retis/raw/master/thesis.pdf">
+                       here</a>. </p>
+                  </div>
                 </div>
-                <p>This system combines the predictions of 3 different models
-                  Each model predicts DR/AMD/Healthy.</p>
               </div>
-            </div>
-          </div>
-        </div> <!-- Content Row -->
-      </div> <!-- /.container-fluid -->
+               <div class="col-lg-12 col-sm-12">
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      What can I do with this app?
+                    </h6>
+                  </div>
+                  <div class="card-body">
+                    <p>This app shows the results of the program for a
+                      set of images. As we are trying to create a
+                      static webapp, the output from the program is
+                      pre-loaded. However, there is an associated
+                      Jupyter Notebook here where you can test all the
+                      models with your own images.</p>
 
+                    <p> For using this webapp, simply choose in the
+                      menu on the left one of the two prediction systems
+                      and select a
+                      patient in the top dropdown menu. You will see,
+                      automatically the <strong>predictions</strong> of the
+                      classifiers, their <strong>confidences</strong> and some
+                      interesting <strong>attention maps</strong>.</p>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- Content Row -->
+            <div class="row">
+              <div class="col-lg-6 col-sm-12">
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      Multi-Stage System
+                    </h6>
+                  </div>
+                  <div class="card-body">
+                    <div class="text-center">
+                      <img class="img-fluid px-3 px-sm-4 mt-3 mb-4"
+                           style="width: 50rem;" src="img/design2.png"
+                           alt="">
+                    </div>
+                    <p>This system is composed of two stages. The
+                      first one tries to differentiate between healthy
+                      and non healthy images (without any distintion
+                      between DR and AMD). The second stage is in
+                      charge of distinguishing between DR and
+                      DMAE. The CNN architecture <strong> VGG16 </strong>
+                      is used in both classifiers.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-sm-12">
+                <div class="card shadow mb-4">
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">
+                      One-Step System
+                    </h6>
+                  </div>
+                  <div class="card-body">
+                    <div class="text-center">
+                      <img class="img-fluid px-3 px-sm-4 mt-3 mb-4"
+                           style="width: 50rem;" src="img/design3.png"
+                           alt="">
+                    </div>
+                    <p>This system combines the predictions of 3 different models
+                      Each model predicts DR/AMD/Healthy and each one of them has
+                      been trained with a different dataset. The CNN architectures
+                      used are <strong>VGG16</strong>, <strong>ResNet50</strong>
+                    and <strong>InceptionV3</strong></p>
+                  </div>
+                </div>
+              </div>
+            </div> <!-- Content Row -->
+          </div> <!-- /.container-fluid -->
         </div> <!-- End of Main Content -->
-
         <!-- Footer -->
         <footer class="sticky-footer bg-white">
           <div class="container my-auto">
@@ -132,20 +184,13 @@
               <span>Copyright &copy; Pablo González Carrizo 2019</span>
             </div>
           </div>
-        </footer>
-        <!-- End of Footer -->
-
-      </div>
-      <!-- End of Content Wrapper -->
-
-    </div>
-    <!-- End of Page Wrapper -->
-
+        </footer> <!-- End of Footer -->
+      </div> <!-- End of Content Wrapper -->
+    </div> <!-- End of Page Wrapper -->
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
       <i class="fas fa-angle-up"></i>
     </a>
-
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -153,11 +198,5 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-    <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
-    <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
-
   </body>
 </html>

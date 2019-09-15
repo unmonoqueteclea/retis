@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Retis</title>
@@ -63,124 +64,120 @@
         <div class="text-center d-none d-md-inline">
           <button class="rounded-circle border-0" id="sidebarToggle"></button>
         </div>
-      </ul>
-      <!-- End of Sidebar -->
-
+      </ul>  <!-- End of Sidebar -->
       <!-- Content Wrapper -->
       <div id="content-wrapper" class="d-flex flex-column">
         <!-- Main Content -->
         <div id="content">
-      </br>
-      <!-- Begin Page Content -->
-      <div class="container-fluid">
+          </br>
+          <!-- Begin Page Content -->
+          <div class="container-fluid">
+            <!-- Page Heading -->
+            <div class="d-sm-flex align-items-center justify-content-between mb-4">
+              <h1 class="h3 mb-0 text-gray-800">One-Step System</h1>
+            </div>
+            <!-- Content Row -->
+            <div class="row">
+              <div class="col-md-12 col-sm-12">
+                <select class="browser-default custom-select" id="patient">
+                  <option selected>Please, choose a patient</option>
+                  <option value="1">Patient 1</option>
+                  <option value="2">Patient 2</option>
+                  <option value="3">Patient 3</option>
+                  <option value="4">Patient 4</option>
+                  <option value="5">Patient 5</option>
+                  <option value="6">Patient 6</option>
+                  <option value="7">Patient 7</option>
+                  <option value="8">Patient 8</option>
+                  <option value="9">Patient 9</option>
+                  <option value="10">Patient 10</option>
+                </select>
+              </div>
+            </div>
+            </br>
 
-        <!-- Page Heading -->
-        <div class="d-sm-flex align-items-center justify-content-between mb-4">
-          <h1 class="h3 mb-0 text-gray-800">One-Step System</h1>
-        </div>
-
-        <!-- Content Row -->
-        <div class="row">
-          <div class="col-md-12 col-sm-12">
-            <select class="browser-default custom-select" id="patient">
-              <option selected>Please, choose a patient</option>
-              <option value="1">Patient 1</option>
-              <option value="2">Patient 2</option>
-              <option value="3">Patient 3</option>
-              <option value="4">Patient 4</option>
-              <option value="5">Patient 5</option>
-              <option value="6">Patient 6</option>
-              <option value="7">Patient 7</option>
-              <option value="8">Patient 8</option>
-              <option value="9">Patient 9</option>
-              <option value="10">Patient 10</option>
-            </select>
-          </div>
-        </div>
-        </br>
-
-        <div class="row">
-          <div class="col-xl-3 col-md-6 col-sm-12">
-            <div class="card border-left-primary shadow h-100 py-2">
-              <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                  <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                      First Model Prediction
+            <div class="row">
+              <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card border-left-primary shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                          First Model Prediction
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800"
+                             id="pred1">
+                          Healthy
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <i class="fas fa-lightbulb fa-2x text-gray-300"></i>
+                      </div>
                     </div>
-                    <div class="h5 mb-0 font-weight-bold text-gray-800"
-                         id="pred1">
-                      Healthy
-                    </div>
-                  </div>
-                  <div class="col-auto">
-                    <i class="fas fa-lightbulb fa-2x text-gray-300"></i>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-md-6 col-sm-12">
-            <div class="card border-left-danger shadow h-100 py-2">
-              <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                  <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
-                      Second Model Prediction
+              <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card border-left-danger shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">
+                          Second Model Prediction
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800"
+                             id="pred2">
+                          DR
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <i class="fas fa-lightbulb fa-2x text-gray-300"></i>
+                      </div>
                     </div>
-                    <div class="h5 mb-0 font-weight-bold text-gray-800"
-                         id="pred2">
-                      DR
-                    </div>
-                  </div>
-                  <div class="col-auto">
-                    <i class="fas fa-lightbulb fa-2x text-gray-300"></i>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-md-6 col-sm-12">
-            <div class="card border-left-warning shadow h-100 py-2">
-              <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                  <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                      Third Model Prediction
+              <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card border-left-warning shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                          Third Model Prediction
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800"
+                             id="pred3">
+                          DR
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <i class="fas fa-lightbulb fa-2x text-gray-300"></i>
+                      </div>
                     </div>
-                    <div class="h5 mb-0 font-weight-bold text-gray-800"
-                         id="pred3">
-                      DR
-                    </div>
-                  </div>
-                  <div class="col-auto">
-                    <i class="fas fa-lightbulb fa-2x text-gray-300"></i>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="col-xl-3 col-md-6 col-sm-12">
-            <div class="card border-left-success shadow h-100 py-2">
-              <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                  <div class="col mr-2">
-                    <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
-                      Final Model Prediction
+              <div class="col-xl-3 col-md-6 col-sm-12">
+                <div class="card border-left-success shadow h-100 py-2">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                          Final Model Prediction
+                        </div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800"
+                             id="predf">
+                          DR
+                        </div>
+                      </div>
+                      <div class="col-auto">
+                        <i class="fas fa-lightbulb fa-2x text-gray-300"></i>
+                      </div>
                     </div>
-                    <div class="h5 mb-0 font-weight-bold text-gray-800"
-                         id="predf">
-                      DR
-                    </div>
-                  </div>
-                  <div class="col-auto">
-                    <i class="fas fa-lightbulb fa-2x text-gray-300"></i>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div> <!-- row -->
+            </div> <!-- row -->
         </br>
         <div class="row">
           <div class="col-lg-6 col-sm-12">
@@ -263,7 +260,7 @@
             </div>
           </div>
         </div> <!-- Row -->
-      </div>  <!-- /.container-fluid -->
+          </div>  <!-- /.container-fluid -->
         </div> <!-- End of Main Content -->
 
         <!-- Footer -->
@@ -276,11 +273,8 @@
         </footer>
         <!-- End of Footer -->
 
-      </div>
-      <!-- End of Content Wrapper -->
-
-    </div>
-    <!-- End of Page Wrapper -->
+      </div> <!-- End of Content Wrapper -->
+    </div><!-- End of Page Wrapper -->
 
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
@@ -294,8 +288,6 @@
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-    <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
     <!-- Page level custom scripts -->
     <script src="js/one.js"></script>
 
