@@ -20,8 +20,10 @@ select a patient in the top dropdown menu. You will see, automatically
 the predictions of the classifiers, their confidences and some
 interesting attention maps.
 
+![example](./docs/img/demo.gif)
 
-# What can I do with this app?
+
+## what can I do with this app?
 
 This app shows the results of the program for a set of images. The
 output from the program is pre-loaded. However, there is an associated
